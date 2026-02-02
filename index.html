@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>Random number game</title>
 </head>
@@ -59,40 +59,33 @@
     }
 
     #kocki{
-    display: flex;
-    gap: 10px;
-    padding: 20px;
-  }
-  #kocka1{
-    display: flex;
-    height: 200px;
-    width: 200px;
-    color: yellow;
-      font-family: 'Press Start 2P', cursive;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid rebeccapurple;
-    font-size: 50px;
-  }
-  #kocka2{
-    display: flex;
-    font-size: 50px;
-      font-family: 'Press Start 2P', cursive;
-    height: 200px;
-    width: 200px;
-    color: yellow;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid rebeccapurple;
-  }
-  #broevi{
-      width: 300px;
-      height: 30px;
-      border-radius: 20px;
-      border: none;
-  }
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #kocka1, #kocka2{
+        display: flex;
+        width: min(40vw, 200px);
+        height: min(40vw, 200px);
+        font-size: min(10vw, 50px);
+        color: yellow;
+        font-family: 'Press Start 2P', cursive;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid rebeccapurple;
+    }
+
+    #broevi{
+        width: min(80vw, 300px);
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+    }
+
     #broevi::placeholder {
         text-align: center;
         color: gray;

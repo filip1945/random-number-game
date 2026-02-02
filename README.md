@@ -1,6 +1,6 @@
 # Random Number Game
 
-A simple interactive dice guessing game built using HTML, CSS and JavaScript.
+A simple interactive number guessing game built using HTML, CSS and JavaScript.
 
 ## 🎮 How it works
 - Enter two numbers between 1 and 6
